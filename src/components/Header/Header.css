@@ -1,0 +1,56 @@
+header{
+    height: 100vh;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+
+.header-container{
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+.cta{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.4rem;
+}
+
+.header-img{
+    background: black;
+    width: 22rem;
+    height: 30rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 4rem;
+    border: 3px solid black;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.scroll-down{
+    position: absolute;
+    right: -1.2rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 1024px) {
+    header{
+        height: 68vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header{
+        height: 100vh;
+    }
+
+    .scroll-down{
+        display: none;
+    }
+}
